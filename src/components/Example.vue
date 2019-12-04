@@ -260,9 +260,9 @@ export default {
     };
   },
   methods: {
-    alert(item) {
-      alert("this is " + JSON.stringify(item));
-    },
+    // alert(item) {
+    //   alert("this is " + JSON.stringify(item));
+    // },
     addMarker: function() {
       const newMarker = {
         position: { lat: 50.5505, lng: -0.09 },
