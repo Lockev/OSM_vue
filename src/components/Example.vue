@@ -1,5 +1,5 @@
 <template>
-  <div id="mymap">
+  <div id="mymap" style="height:80vh;">
     <l-map
       :zoom.sync="zoom"
       :options="mapOptions"
@@ -147,9 +147,11 @@ const tileProviders = [
     attribution:
       '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
     url:
-      "	https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
+      "	https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png"
   }
 ];
+// 	Dark mode : https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png
+// Light mode : https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png
 
 export default {
   name: "Example",
